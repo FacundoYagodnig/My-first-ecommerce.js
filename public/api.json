@@ -1,0 +1,54 @@
+[
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba1.jpg",
+    "titulo": "Musculosa",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 800,
+    "id": 1
+  },
+
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba2.jpg",
+    "titulo": "Remera manga corta",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 500,
+    "id": 2
+  },
+
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba3.jpg",
+    "titulo": "Remera manga Larga",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 700,
+    "id": 3
+  },
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba1.jpg",
+    "titulo": "Remera manga Larga",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 900,
+    "id": 4
+  },
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba3.jpg",
+    "titulo": "Remera manga Larga",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 900,
+    "id": 5
+  },
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba2.jpg",
+    "titulo": "Remera manga Larga",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 1000,
+    "id": 6
+  },
+
+  {
+    "imagen": "/My-first-ecommerce/public/img/imagen-prueba3.jpg",
+    "titulo": "Remera manga Larga",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio provident aperiam eius ducimus enim blanditiis excepturi iusto omnis impedit amet eligendi, nisi, autem quis in ratione iste labore deserunt?",
+    "precio": 1200,
+    "id": 7
+  }
+]

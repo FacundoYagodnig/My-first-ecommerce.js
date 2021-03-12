@@ -1,0 +1,278 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/My-first-ecommerce/styles/index.css" />
+
+    <script
+      src="https://kit.fontawesome.com/cc253917bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="container-fluid site-header sticky-top py-1">
+      <nav class="navbar  d-flex flex-row justify-content-around">
+        <span class="brand-span  col-lg-2 navbar-brand mb-0 h1"
+          >MADEMOISELLE</span
+        >
+
+        <div class="col-lg-5 col-md-6  d-block" id="container-links">
+          <ul
+            class="d-flex justify-content-around align-items-baseline list-unstyled mb-1"
+          >
+            <li><a href="#">HOME</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li>
+              <a href="./register.html" target="_blank"
+                >REGISTRARSE</a
+              >
+            </li>
+            <li><a href="#" id="log-out">LOG OUT</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2   " id="container-fas">
+          <div class="div-fasfa">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="badge-cart"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel bootstrap -->
+      <div class="container pt-5">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner w-100">
+            <div class="carousel-item active">
+              <img
+                src="/My-first-ecommerce/public/img/imagen-prueba1.jpg"
+                class="d-block carrousel-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/My-first-ecommerce/public/img/imagen-prueba2.jpg"
+                class="d-block carrousel-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/My-first-ecommerce/public/img/imagen-prueba3.jpg"
+                class="d-block carrousel-img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Finish Carousel -->
+
+      <!-- Product's section -->
+      <section class="container-fluid mt-5" id="products">
+        <div class="d-md-flex flex-column flex-md-equal w-100" id="app">
+          <h1 class="text-center mt-5 bg-light w-100">PRODUCTOS</h1>
+          <div
+            class="row row-cols-1 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 g-4 pt-5 flex-wrap"
+            id="row"
+          ></div>
+
+          <!-- Shopping cart-hidden to visible -->
+          <div class="carrito" id="product-list">
+            <div class="title">
+              <h1 class="text-center my-4  text-white">TU CARRITO</h1>
+              <i class="fas fa-times cancelar"></i>
+            </div>
+            <div
+              class="d-flex justify-content-around align-items-center flex-wrap"
+              id="items"
+            ></div>
+            <div
+              class="d-flex justify-content-center align-items-center" id="totales-carrito"
+              
+            >
+              <div id="footer-carrito">
+                <p>Carrito vacio, empieza a comprar!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Shopping cart-hidden to visible -->
+        </div>
+      </section>
+      <!-- Finish Product's section >>>>>>>>> -->
+
+      <!-- Templates -->
+      <template id="template-badgeCart">
+        <span
+          class="carrito-icon badge badge-dark text-white"
+          
+          >9</span
+        >
+      </template>
+
+      <template id="template-carrito">
+        <div
+          class="div-container d-flex flex-row justify-content-around align-items-center  my-4"
+        >
+          <div class="template-img ">
+            <img src="#" class="img-carrito img-fluid" />
+          </div>
+          <div class="container  d-flex justify-content-center text-center flex-column flex-wrap" id="template-body">
+            <h3 class="template-titulo ">
+              <strong> titulo</strong>
+            </h3>
+
+            <div class="mt-2">
+              <p class="precio-title" ">
+                Precio : $ <span class="template-span2">500</span>
+              </p>
+            </div>
+
+            <div class="div-cantidad pr-2">
+              <p class="template-cantidad" >
+                <strong>Cantidad :</strong>
+              </p>
+            
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mb-2 " id="template-btn">
+              <button class="btn btn-minus ">-</button>
+              <p class="div-btns w-100 text-center" >
+                <span class="template-span">1</span>
+              </p>
+              <button class="btn btn-plus ">+</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template id="template-footer">
+        <strong><h3 >Total compra :</h3></strong>
+
+        <strong
+          ><p class="precio-total">
+            $ <span class="total-precio" style="font-size: 1.8rem">5000</span>
+          </p></strong
+        >
+        <div class="div-buy m-auto d-inline-block">
+          <button class="btn btn-minus btn-lg my-4" id="vaciar-carrito">
+            Vaciar carrito
+          </button>
+          <button class="btn btn-comprar btn-lg my-4" id="completar-carrito">
+            Comprar
+          </button>
+        </div>
+      </template>
+      <!-- Finish Templates -->
+    </main>
+
+    <footer class="container-fluid my-5" id="container-footer">
+      <div
+        class="row row-cols-md-4 row-cols-sm-4 d-flex justify-content-around align-items-start flex-sm-row"
+      >
+        <div class="col text-center">
+          <h4>MADEMOISELLE INDUMENTARIA</h4>
+        </div>
+        <div class="col text-center">
+          <h4>CONTACTO</h4>
+          <ul class="list-unstyled text-small" style="font-size: 1.6rem">
+            <li>
+              <a href="#"><i class="fab fa-whatsapp pe-2"></i>1134021220</a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mademoiselle_ind/"
+                target="_blank"
+                ><i class="fab fa-instagram pe-2"></i>@mademoiselle_ind</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/mademoiselle_ind-100592814987978"
+                target="_blank"
+                ><i class="fab fa-facebook pe-2"></i>@mademoiselle_ind</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center" id="features">
+          <h4>FEATURES</h4>
+          <ul class="list-unstyled text-small" style="font-size: 1.6rem">
+            <a href="#"><li>Ofertas</li></a>
+            <a href="#"><li>Novedades</li></a>
+            <a href="#"><li>Invierno2021</li></a>
+          </ul>
+        </div>
+        <div class="ubicacion col md text-center">
+          <h4>DONDE ENCONTRARNOS</h4>
+          <ul class="list-unstyled text-small" style="font-size: 1.6rem">
+            <li>Ramos Mejia sur</li>
+            <li>La plata</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/My-first-ecommerce/script/index.js"></script>
+  </body>
+</html>

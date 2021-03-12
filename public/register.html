@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/My-first-ecommerce/styles/register.css" />
+    <script
+      src="https://kit.fontawesome.com/cc253917bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>LOGIN USER</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="site-header sticky-top py-1">
+      <nav
+        class="container navbar d-flex flex-column flex-md-row justify-content-between"
+      >
+        <span class="navbar-brand mb-0 h1" style="font-size: 2rem"
+          >MADEMOISELLE</span
+        >
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="abs-center">
+        <div class="d-block my-5"><h1>Registro</h1></div>
+        <form
+          class="d-flex justify-content-center align-items-center flex-column g-3 needs-validation text-center"
+          id="register-form"
+        >
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>First name</h3></label>
+            <input type="text" class="form-control" id="first-name" required />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>Last name</h3></label>
+            <input type="text" class="form-control" id="last-name" required />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>Username</h3></label>
+            <div class="input-group has-validation">
+              <span
+                class="input-group-text"
+                id="validationTooltipUsernamePrepend"
+                >@</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="user-name"
+                aria-describedby="validationTooltipUsernamePrepend"
+                required
+              />
+              <div class="invalid-tooltip">
+                Please choose a unique and valid username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>Email</h3></label>
+            <input type="text" class="form-control" id="email" required />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>Password</h3></label>
+            <input type="text" class="form-control" id="password" required />
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <label class="form-label"><h3>City</h3></label>
+            <input type="text" class="form-control" id="city" required />
+            <div class="invalid-tooltip">Please provide a valid city.</div>
+          </div>
+          <div class="col-md-3 position-relative">
+            <label class="form-label"><h3>Provincia</h3></label>
+            <select class="form-select" id="provincia-select" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Buenos Aires</option>
+              <option>La Pampa</option>
+              <option>Cordoba</option>
+              <option>Santa Fe</option>
+            </select>
+            <div class="invalid-tooltip">Please select a valid state.</div>
+          </div>
+          <div class="col-md-3 position-relative">
+            <label class="form-label"><h3>Codigo Postal</h3></label>
+            <input
+              type="text"
+              class="form-control"
+              id="codigo-postal"
+              required
+            />
+            <div class="invalid-tooltip">Please provide a valid zip.</div>
+          </div>
+          <div class="col-4">
+            <button
+              class="btn btn-primary btn-submit"
+              style="width: 100%"
+              type="submit"
+            >
+              Enviar
+            </button>
+            <p style="margin-top: 5%">
+              Ya tenes una cuenta? <a href="login.html">Entra aqui</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/My-first-ecommerce/script/register.js"></script>
+  </body>
+</html>
