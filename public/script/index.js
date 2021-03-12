@@ -45,7 +45,7 @@ let cart = {};
 
 class Carrito {
   //adquiero la info
-  //tratar de que aparezca simplemente en el aire la misma card que hice click
+
   comprarProducto(e) {
     if (e.target.classList.contains("btn")) {
       this.leerDatosProductos(e.target.parentElement.parentElement);
@@ -106,7 +106,7 @@ class Carrito {
       carrito.classList.add("carrito2");
       carrito.classList.remove("carrito3");
       setInterval(function () {
-        //Si pasan mas de, en este caso 50seg, el carrito se cierra y se borra del LocalStorage los items agregados.
+        //Si pasan mas de, 'segs', el carrito se cierra y se borra del LocalStorage los items agregados.
         body.classList.remove("body2");
         carrito.style.visibility = "hidden";
         carrito.classList.remove("carrito2");
