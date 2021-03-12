@@ -31,7 +31,7 @@ function loginUser(e) {
           //el ingreso es valido
           match = true;
           console.log("logueado con exito");
-          location.href = "/My-first-ecommerce/public/index.html";
+          location.href = "/index.html";
           localStorage.setItem("user", JSON.stringify(userEl));
           return;
         }
@@ -47,7 +47,7 @@ function loginUser(e) {
 function logOutUser(e) {
   e.preventDefault();
   localStorage.removeItem("user");
-  location.href = "/My-first-ecommerce/public/register.html";
+  location.href = "/register.html";
 }
 form.addEventListener("submit", (e) => loginUser(e));
 logOutbtn.addEventListener("click", (e) => logOutUser(e));

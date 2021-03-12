@@ -56,7 +56,7 @@ function saveUser(e) {
   let users = JSON.stringify(userList);
   localStorage.setItem("users", users);
 
-  location.href = "/My-first-ecommerce/public/login.html";
+  location.href = "/login.html";
 }
 console.log(userList);
 form.addEventListener("submit", (e) => saveUser(e));
